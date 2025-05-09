@@ -1,0 +1,65 @@
+body {
+  margin: 0;
+  font-family: 'Georgia', serif;
+  background: linear-gradient(to bottom, #c1fcd3, #fcb579, #fd7474);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-direction: column;
+}
+
+.card {
+  background-color: #0c1c3a;
+  border-radius: 15px;
+  padding: 40px;
+  text-align: center;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+  max-width: 500px;
+  transition: transform 0.3s ease;
+}
+
+.card img {
+  width: 200px;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.card img:hover {
+  transform: scale(1.05);
+}
+
+.title {
+  color: white;
+  font-size: 1.6em;
+  margin-top: 20px;
+  font-weight: bold;
+}
+
+.subtitle {
+  color: white;
+  font-size: 1em;
+  margin-top: 10px;
+}
+
+#mensajeOculto {
+  display: none;
+  margin-top: 20px;
+  font-size: 1.2em;
+  color: #fff;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 15px;
+  border-radius: 10px;
+  animation: fadeIn 1s ease forwards;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.footer {
+  margin-top: 20px;
+  color: #000;
+  font-weight: bold;
+}
